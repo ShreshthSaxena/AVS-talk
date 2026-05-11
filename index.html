@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>WebcamET</title>
+		<title>Saxena-AVS-2026</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/serif.css">
+		<link rel="stylesheet" href="dist/theme/serif-mod.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -36,10 +36,10 @@
 		<div class="slides">
 		<section>
 			<h3 align="left">Studying visual attention beyond the lab: Lessons from applied eye-tracking</h3>
-			<h5 align="left" style="font-size: 60%;">Shreshth Saxena (<a href="mailto:saxens17@mcmaster.ca">saxens17@mcmaster.ca</a>) &
+			<h5 align="left" style="font-size: 65%;"><b>Shreshth Saxena </b> (<a href="mailto:saxens17@mcmaster.ca">saxens17@mcmaster.ca</a>) &
 			Dr. Lauren Fink </h5> 
 		</section>
-
+		
 		<section>
 
 			<!-- <section data-auto-animate><h4>Tracking attention beyond the lab with eye-tracking</h4></section> -->
@@ -52,7 +52,7 @@
 			</section>
 
 			<section data-auto-animate><h4>Tracking attention beyond the lab with eye movements</h4>
-				<div style="display: grid; grid-template-columns: 1fr 0.5fr 2fr; align-items: center; gap: 10px;">
+				<div style="display: grid; grid-template-columns: 1fr 0.7fr 2fr; align-items: center; gap: 10px;">
         
 					<div style="display: flex; flex-direction: column; align-items: center;" >
 						<img src="images/intro/b1-nobg.png" width="250">
@@ -75,35 +75,6 @@
 				<aside class="notes"> <li>Static images / simple videos; Screen-based eye trackers; Head fixed (chin rest); Controlled tasks (e.g., visual search)</aside>
 			</section>
 		</section>
-
-		<section data-auto-animate><h4>Why take eye tracking beyond the lab?</h4> 
-			<ul style="font-size:40%; padding-left: 10%; padding-right: 10%; padding: 3%; list-style: none;">
-				<li>Study social attention in context</li>
-				<li>Study cross-modal dynamics with complex, ecological stimuli</li>
-				<li>Reach global and underrepresented populations</li>
-				<li>Bridge research and deployment–align methods with real-world systems and industry use cases</li>
-				<li>Findings from lab based studies often do not replicate in naturalistic/real-world experimentation</li>
-				<ul style="font-size:60%;">
-					<li>Foulsham et al. (2011). The where, what and when of gaze allocation in the lab and the natural environment. Vision Research, doi: 10.1016/j.visres.2011.07.002.</li>
-					<li>Wohltjen & Wheatley (2024) Interpersonal eye-tracking reveals the dynamics of interacting minds. Front. Hum. Neurosci. doi: 10.3389/fnhum.2024.1356680</li>
-					<li>Laborde et al. (2025) Vision toolkit part 1. Neurophysiological foundations and experimental paradigms in eye-tracking research: a review. Front Physiol. doi: 10.3389/fphys.2025.1571534.</li>
-					<li>Hoppe et al. (2018) Eye Movements During Everyday Behavior Predict Personality Traits. Front. Hum. Neurosci. doi: 10.3389/fnhum.2018.00105</li>
-				</ul>
-			</ul>
-			<aside class="notes">music, crowds, movement, and unpredictability that labs can’t replicate. <br> 
-				enabling participation from individuals who cannot access labs due to physical, cognitive, or economic barriers.<br>
-				align methods with real-world systems and industry use cases
-			</aside>
-		</section>
-
-				<!-- <section data-auto-animate><h4 style="font-size: 180%;">Eye Movements</h4>
-					<aside class="notes">art perception, movie perception, visual search</aside>
-				<h6>Visual Attention</h6> <p style="font-size: 50%">Reading, scene viewing, art/film perception, visual search etc.</p>
-				<h5>Human Computer Interaction</h5><p style="font-size: 50%">Interface design, driving, aviation, marketing/advertising etc.</p>
-				<h5>Memory & Ageing</h5> <p style="font-size: 50%"> The obligatory effects of memory on eye movements, Ryan et al. (2007)</p>
-				<h5>Auditory Attention</h5> <p style="font-size: 50%">  Fink et al. (2018), Lange et al. (2017), Maroti et al. (2017)</p>
-				</section> -->
-		
 		
 		<section>
 			<section data-auto-animate><h4>How do we run eye-tracking studies outside the lab? </h4></section>
@@ -139,61 +110,7 @@
 			<img class = "fragment" src="images/eye_webcam.png" width="200" height="150">
 
 			<img class = "fragment fade-in" src="images/webcam_based.png" height=220 >
-			<!-- <div class="r-stack">
-				<figure  class="fragment fade-in-then-out"><img src="images/Gaze360.png"  height="300"><figcaption>Gaze360: Kellnhofer et al. (2019)</figcaption></figure>
-				<figure class="fragment fade-in-then-out">
-				<img src="images/rtgene.gif"  height="300"><figcaption>RT_Gene: Fischer et al. (2018)</figcaption></figure>
-				<figure class="fragment fade-in-then-out">
-				<img src="https://webgazer.cs.brown.edu/media/example/collision.png" height="300"><figcaption>Webgazer: Papoutsaki et al. (2016)</figcaption></figure>
-
-				<aside class="notes"> Image Overhead camera instead of eye glasses, mouseview.js</aside>
-			</div> -->
 		</section>
-		
-		<!-- <section>The two-worlds of software eye-tracking</br></br>
-			<table style='font-size:60%'>
-		    	<thead><tr>
-		            <th>Web browser based</th>
-		            <th>Deep learning based</th>
-		        </tr></thead>
-		        <tbody>
-		        <tr>
-		            <td>Proprietary: Xlabs, LabVanced, Gorilla
-		            </br>Open-sourced: WebGazer, TurkerGaze
-					</td>
-		            <td>MPIIGaze, RT-GENE, FAZE, ETHXGaze</td>
-		        </tr>
-		        <tr>
-		            <td>Specialized tasks: web browsing behavior (WebGazer, Xlabs), Image saliency prediction (TurkerGaze)
-		            </td>
-		            <td>Developed for generalized gaze prediction</td>
-		        </tr>
-		        <tr>
-		            <td>Low-order feature detection (susceptible to noise)</td>
-		            <td>Higher order feature learning (robust to noise)</td>
-		        </tr><tr>
-		            <td>Hardware specifications are a performance bottleneck</td>
-		            <td>Modular and actively being developed for better performance</td>
-				</tr><tr>
-		            <td>Webgazer reported an error of 4.17˚ in online studies</td>
-		            <td>FAZE reported an error of 3.18˚ on GazeCapture dataset</td>
-		        </tr><tr>
-		            <td>Online webcam-based eye tracking in cognitive science: A first look, Semmelmann and Weigelt (2018)</td>
-		            <td>Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark, Cheng et al. (2021)</td>
-		        </tr>
-		        </tbody>
-		    </table>
-		    <aside class="notes"> DL methods pushing the boundary, Proof of concept, not applied to online experiments</br>accuracy measures are calculated differently</aside>
-		</section> -->
-
-		<!-- <section>Eye-tracking with deep learning</br></br>
-			<div class="r-stack">
-				<figure class="fragment fade-in-then-out"><img src="images/appearance_based.png" height="350"><figcaption>Gudi et al. (2020)</figcaption></figure>
-				<figure class="fragment fade-in-then-out">
-				<img  src="https://d3i71xaburhd42.cloudfront.net/50d6c00b90ddcfa55bb23a7c5f6c31002b3f1495/5-Figure4-1.png" height="350"><figcaption>Cheng et al. (2021)</figcaption></figure>
-				<figure class="fragment fade-in"><img  src="https://images.deepai.org/converted-papers/2007.15837/x3.png" width="900" height="400"><figcaption>Xhang et al. (2020)</figcaption></figure>
-			</div>
-		</section> -->
 		
 		<section data-auto-animate>
 			<!-- <h4>Study 1: Bringing deep learning to remote eye tracking experiments</h4> -->
@@ -256,7 +173,8 @@
 			<figure class="fragment"><img src="images/calibration/SP_calib.png" width="250" height="150"><figcaption>Smooth pursuit calibration</figcaption></figure>
 			</br></br>
 
-			<center class="fragment"><p style="font-size: 40%; width:70%; text-align: left;" >Shreshth Saxena, Elke Lange, and Lauren Fink. 2022. Towards efficient calibration for webcam eye-tracking in online experiments. In 2022 Symposium on Eye Tracking Research and Applications (ETRA '22). Association for Computing Machinery, New York, NY, USA, Article 27, 1–7. https://doi.org/10.1145/3517031.3529645</p></br>
+			<center class="fragment"><p style="font-size: 40%; width:70%; text-align: left;" >Saxena et al. 2022. Towards efficient calibration for webcam eye-tracking in online experiments. Symposium on Eye Tracking Research and Applications (ETRA '22). Association for Computing Machinery. 
+				<a href="https://doi.org/10.1145/3517031.3529645">https://doi.org/10.1145/3517031.3529645</a></p></br>
 			<iframe src="images/calibration/calibration_ETRA.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"  target="_parent"  height="150" width="800" style="border: none;" frameborder="0"></iframe></center>
 			<aside class="notes">Give comparisons, best practices, calibration time requirements..... so not gonna focus on calib in this talk</aside>
 		</section>
@@ -266,73 +184,38 @@
 			<h4>Study 2: Characterising the accuracy of webcam eye-tracking</h4>			
 			<img src="images/task_seq.png" height=500>
 			<center><p style="font-size: 40%; width:70%; text-align: left;" >
-				Shreshth Saxena, Lauren Fink, and Elke Lange. 2023. Deep learning models for webcam eye tracking in online experiments. 
-				Behaviour Research 56, 3487–3503. https://doi.org/10.3758/s13428-023-02190-6</p></br></center>
+				Saxena et al. 2023. Deep learning models for webcam eye tracking in online experiments. 
+				Behaviour Research Methods. <a href="https://doi.org/10.3758/s13428-023-02190-6">https://doi.org/10.3758/s13428-023-02190-6</a></p></br></center>
 		</section>
 
 		<section data-auto-animate>
 			<h4>Study 2: Characterising the accuracy of webcam eye-tracking</h4>
-			<img src="images/webcam/11.png" height="350">
-			<img src="images/webcam/12.png" height="350">
-			<img src="images/webcam/13.png" height="350">
-			<img src="images/webcam/14.png" height="350">
 			<img src="images/webcam/15.png" height="350">
+			<img src="images/webcam/14.png" height="350" style="transform: scaleX(-1);">
+			<img src="images/webcam/13.png" height="350">
+			<img src="images/webcam/16.png" height="145" style="vertical-align: top;" >
+			<img src="images/webcam/17.png" height="180" style="vertical-align: top; padding-top: 15px;">
+			
 			<center class="fragment"><p style="font-size: 55%; width:85%; text-align: left;" >
 				Lesson 1: Deep learning outperform present SOTA, but offline inference limits real-time use and privacy.</p></br></center>
 		</section>
-
-		<!-- <section data-auto-animate>
-			<h4>Study 3: Optimising the speed-accuracy trade-off</h4>
-			<img src="images/webcam/13.png" height="350">
-			<img src="images/webcam/14.png" height="350">
-			<img src="images/webcam/15.png" height="350">
-			<img src="images/webcam/12.png" height="350">
-			<img src="images/webcam/11.png" height="350">
-		</section> -->
 
 		<section data-auto-animate>
 			<h4>Study 3: Optimising the speed-accuracy trade-off</h4>
 			<img src="images/webcam/13.png" height="350">
 			<img src="images/webcam/22.png" height="350">
 			<img src="images/webcam/15.png" height="350">
-			<img src="images/webcam/12.png" height="350">
-			<img src="images/webcam/21.png" height="350">
+			<img src="images/webcam/16.png" height="145" style="padding-bottom: 85px;">
+			<img src="images/webcam/27.png" height="250">
 
 			<center><p style="font-size: 40%; width:70%; text-align: left;" >
-				Shreshth Saxena, and Lauren Fink. 2026. WebSight: Accessible and privacy-aware webcam eye tracking using real-time deep learning in the browser. <i>Manuscript in Preparation</i></p></br></center>
+				Saxena and Fink. 2026. WebSight: Accessible and privacy-aware webcam eye tracking using real-time deep learning in the browser. <em>Manuscript in Preparation</em></p></br></center>
 		</section>
-
-		<!-- <section data-auto-animate>
-			<h4>Gaze Calibration</h4>
-			<img src="images/timeline.png">
-			<img src="images/calib_results.png" >
-		</section> -->	
 
 		<section data-auto-animate>
-			
-			<table style="font-size: 60%; "><tr><td style="vertical-align: middle;">
-			<h3>Summary of results</h3>
-			<ul>
-				<li class="fragment">Distributed (bookended) and hybrid calibration outperforms sequential calibration</li>
-				<li class="fragment">Gaze prediction accuracy differs across eye-movement and task types</li>
-				<li class="fragment">Deep learning reduces calibration and improves reliability over longer trials</li>
-				<li class="fragment">Fixation accuracy of ~2.4° from best performing model; surpasses previous state-of-the-art</li>
-				<li class="fragment">Prediction accuracy drops at edges and bottom regions of the screen</li>
-				<li class="fragment">Appearance-based methods match high-resolution trackers for blink detection</li>
-				<li class="fragment">Currently running experiments with real-time deep learning model in web-browsers; to be released as a jsPsych extension</li>
-				
-				<!-- <li class="fragment">Better accuracy near the center of screen</li>
-				<li class="fragment">High accuracy in classifying gaze to screen zones/regions</li>
-				<li class="fragment">Can common metrics from lab-based eye-tracking</li> -->
-				<!-- <li class="fragment">Can generate heatmaps and scanpaths similar to lab-based eye-tracking</li> -->
-				<!-- <li class="fragment">Can accurately track gaze movement direction</li> -->
-				<!-- <li class="fragment">FAZE performs best in all tasks but also is the most computationally expensive</li> -->
-				<!-- <li class="fragment">Blink detection with appearance based methods is comparable to high resolution eye trackers</li> -->
-			</ul></td>
-			<td><img src="images/result_sum.png" width=300></td></tr></table>
+			<img src="images/webcam/results_collage.png" height="350">
+			<h4 class="fragment">Lessons from eye-tracking in remote settings</h4>
 		</section>
-
-		<section data-auto-animate><h4>Lessons from eye-tracking in remote settings</h4></section>
 
 			<section data-auto-animate><h4>Lessons from eye-tracking in remote settings</h4>
 			<ul style="font-size: 60%; margin-top: 15px;">
@@ -341,229 +224,24 @@
 				<li class="fragment">Results can inform experiment design choices such as stimuli size and placement</li> 
 				<li class="fragment">Traditional event-detection and analysis pipelines do not work for 30Hz eye-tracking data</li>
 				<li class="fragment">Proprietary, GUI-based experiment builders don’t scale</li>
-				<ul style="font-size: 65%; ">
+				<ul style="font-size: 75%; ">
 					<li class="fragment">Problem no. 1: Openwashing (https://en.wikipedia.org/wiki/Openwashing)</li>
 					<li class="fragment">Problem no. 2: Working with a limited toolset and inconsistent terminologies</li>
-					<li class="fragment">Saxena S, Shi J, Fink L. 2026. AVOKE: an open-source toolbox for audiovisual web experiments in jsPsych. PeerJ</li> 
-					<li class="fragment">Live Demo: https://beatlab-mcmaster.github.io/AVOKE/</li>
+					<ul>
+						<li class="fragment" style="list-style-type: none;">Saxena et al. 2026. AVOKE: an open-source toolbox for audiovisual web experiments in jsPsych. PeerJ. <br>
+							<a href="https://beatlab-mcmaster.github.io/AVOKE">Code and demo available at https://beatlab-mcmaster.github.io/AVOKE</a></li> 
+					</ul>
 				</ul>
 				<li class="fragment">Real-time deep learning inference in the web-browser is still in beta</li>
-				<ul style="font-size: 65%; ">
+				<ul style="font-size: 75%; ">
 					<li class="fragment">Industry focus got shifted back to server-compute with the rise of LLMs</li>
 					<li class="fragment">WebGPU and webONNX suffer from abondoned research/development</li>
-					<li class="fragment">WebSight works around it using classic web workers and webGL!</li>
+					<li class="fragment">WebSight works around it using classic web workers and webGL acceleration!</li>
 				</ul>
 			</ul>
 		</section>
 	
-	</section>
-
-
-	<!-- <section> <h4>Online experiment</h4> 
-		<img src="images/participants.png">
-	</section> -->
-
-	
-	<!-- Validation -->
-	<section data-visibility="hidden">
-		<section><h4>Validating deep learning models</h4></section>
-		<section data-auto-animate><h4>Validating deep learning models</h4>
-			<!-- <p style="font-size:55%" align="right">N=65 </br>(age btw 20-35; no glasses)</br>Pre-registration: https://osf.io/qh8kx</p> -->
-			<img src="images/overview_experiment.png" height=450>
-		</section>
-
-		<section data-auto-animate>
-			<h4>Validating deep learning models</h4>
-			<img src="images/task_seq.png" height=500>
-			<aside class="notes">Paired data from calibration</aside>
-		</section>
-
-		<section>Task battery<img src="images/task_seq2.png">
-			<aside class="notes"> COUNTER BALANCING of task order</aside>
-		</section>
-
-			<section data-auto-animate><h4>Fixation</h4>
-				<div class="r-stack">
-					<img class = "fragment fade-in-then-out" src="images/fixation/fix.gif" height=90% width=40%>
-					<img class = "fragment fade-in-then-out" src="images/fixation.png" height=90% width=40%>
-					<img class = "fragment fade-in-then-out" src="images/fixation/single_trial.png">
-					<img class = "fragment fade-in" src="images/fixation/overall.png">					
-				</div>
-				<table class="fragment" style='font-size:60%' width="100%">
-					<tr><th></th>
-						<th>MPIIGaze</th>
-						<th>ETHXGaze</th>
-						<th>FAZE</th></tr>
-					<tr>
-						<th>Accuracy</th>
-						<td>3.70°</br> (IQR: 2.74°-4.59°)</td>
-						<td>3.40°</br> (IQR: 2.67°-4.13°)</td>
-						<td>2.44°</br> (IQR: 1.86°-2.90°)</td></tr>
-					<tr>
-						<th>Root Mean Squared</br> (Precision)</th>
-						<td>2.33°</br> (IQR: 1.88-2.75)</td>
-						<td>1.80°</br> (IQR: 1.28°-2.29°)</td>
-						<td>0.47°</br> (IQR: 0.29-0.64)</td>
-					</tr>
-					<tr>
-						<th>Standard Deviation</br> (Precision)</th>
-						<td>2.96°</br> (IQR: 2.32°-3.57°)</td>
-						<td>2.39°</br> (IQR: 1.70-2.98)</td>
-						<td>1.63°</br> (IQR: 1.06° 2.07°)</td>
-					</tr>
-
-					
-				</table>
-			</section>
-
-			<section data-auto-animate><h4>Zone classification</h4>
-				<div class="r-stack">
-					<img class = "fragment fade-in-then-out" src="images/zone_classification.gif" height=300>
-					<img class = "fragment fade-in-then-out" src="images/zone/single_trial.png" height="500">
-					<img class = "fragment fade-in-then-out" src="images/zone/overall.png">
-					<aside class="notes">This is confusion matrix, diagnol is perfect..... if you're a psychological researcher and want to present 16 objects but also lower.... FAZE overall acc was 0.65</aside>
-				</div>
-			</section>
-			<section data-auto-animate><h4>Zone classification</h4>
-				<img src="images/zone/2x2.png" height=180 width="800">
-				<img class = "fragment " src="images/zone/1x2.png"height=160 width=800>
-				<img class = "fragment " src="images/zone/2x1.png" height=160 width=800>
-				<aside class="notes">tasks where you want to present only 2 or 4 objects, also better to present horizontally!</aside>
-			</section>
-
-			<section data-auto-animate><h4>Free viewing</h4>
-				<div class="r-stack">
-					<img class = "fragment fade-out" src="images/free_viewing.png" height=300>
-					<img class = "fragment fade-in-then-out" src="images/free_viewing/step1.png" height="600">
-					<img class = "fragment fade-in-then-out" src="images/free_viewing/step2.png" height="600">
-					<img class = "fragment fade-in-then-out" src="images/free_viewing/step3.png" height="600">
-				</div>
-			</section>
-			<section data-auto-animate><h4>Free viewing</h4>
-				<div class="r-stack">
-					<img class = "fragment fade-out" src="images/free_viewing/single_trial.png" height="120%">
-					<img class = "fragment fade-in" src="images/free_viewing/overall.png">
-				</div></br>
-				<table class="fragment" style="font-size:60%">
-					<tr><th></th>
-						<th>MPIIGaze</th>
-						<th>ETHXGaze</th>
-						<th>FAZE</th></tr>
-					<tr>
-						<th>Fixation count</th>
-						<td>14</br> IQR: 12-18</td>
-						<td>13</br> IQR: 10-15</td>
-						<td>12</br> IQR: 11-13</td></tr>
-					<tr>
-						<th>Gaze entropy</th>
-						<td>0.40</br> IQR:0.38-0.44</td>
-						<td>0.38</br> IQR: 0.35-0.41</td>
-						<td>0.35</br> IQR: 0.33-0.37</td></tr>
-				</table>
-				<aside class="notes">Talk about Judd, images have different number of salient clusters</aside>
-			</section>
-			<section data-visibility="hidden"><img src="images/free_viewing/overall_withGT.png"></section>
-
-			<section data-auto-animate><h4>Smooth pursuit</h4>
-				<div class="r-stack">
-					<img class = "fragment fade-in-then-out" src="images/smooth_pursuit/SP_1.png" height=300>
-					<img class = "fragment fade-in-then-out" src="images/smooth_pursuit/SP_2.png" height=300>
-					<img class = "fragment fade-in-then-out" src="images/smooth_pursuit/single_trial.png" >
-					<figure class = "fragment fade-in-then-out"><img src="images/smooth_pursuit/overall.png"  height=550><img src="images/legend.png" height="50"></figure>
-					<img class = "fragment fade-in-then-out" src="images/smooth_pursuit/overall2.png">
-				</div>
-			</section>
-
-			<section data-auto-animate><h4>Blink detection</h4>
-				<div class="r-stack">
-					<img class = "fragment fade-in-then-out" src="images/blinks.png" height=300>
-					<img class = "fragment fade-in-then-out" src="images/blinks/models.png" height=400>
-					<img class = "fragment fade-in-then-out" src="images/blinks/single_trial.png" height=400>
-					<img class = "fragment fade-in" src="images/blinks/overall.png"  height=200>
-				</div>
-				<table class="fragment" style="font-size:60%">
-					<tr>
-						<th></th>
-						<th>EAR</th>
-						<th>RT_BENE</th></tr>
-					<tr>
-						<th>blinks/trial</th>
-						<td>6.9 (IQR: 6.3-7.2)</td>
-						<td>5.3 (IQR: 4.9-6)</tr>
-					<tr>
-						<th>blink latency</th>
-						<td>381 ms(IQR: 293-427 ms)</td>
-						<td>419 ms(IQR: 318-502 ms)</td>
-					</tr>
-					<tr>
-						<th>blink duration</th>
-						<td>403 ms(IQR: 383-424 ms)</td>
-						<td>212 ms(IQR : 157-243 ms)</td>
-					</tr>
-				</table>
-			</section>
-		<!-- <section>
-			<section data-auto-animate><h3>Comparing with lab-based eye tracking</h3>
-				<img src="https://dfzljdn9uc3pi.cloudfront.net/2019/7086/1/fig-1-2x.jpg" height="80%" width="75%">
-				<figcaption style="font-size: 60%;">Ehinger et al. (2019) <a href="https://doi.org/10.7717/peerj.7086">https://doi.org/10.7717/peerj.7086</a></figcaption>
-			</tr>
-		</table>
-			</section>
-			<section data-auto-animate><h3>Comparing with lab-based eye tracking</h3></br></br>
-				<table style="font-size:60%">
-				<tr><th>Task</th><th> Measure</th><th> Webcam results (model)</th><th> Pupil Labs</th><th> EyeLink</th></tr>
-				<tr><th rowspan="3" style="vertical-align:middle;">Fixation</th><td> Accuracy</td><td> 2.44° (FAZE)</td><td> 0.82°</td><td> 0.57°</td></tr>
-				<tr><td> Precision (RMS)</td><td> 0.47° (FAZE)</td><td> 0.119° </td><td> 0.023°</td></tr>
-				<tr><td> Precision (STD)</td><td> 1.63° (FAZE)</td><td> 0.311°</td><td> 0.193° </td></tr>
-				<tr><th>Smooth Pursuit</th><td> Onset latency</td><td> 0.267s (MPIIGaze)</td><td> 0.245s</td><td> 0.241s</td></tr>
-				<tr><th rowspan="2" style="vertical-align:middle;">Blink Detection</th><td> Number of blinks</td><td> 6.9 (EAR)</td><td> 5.3 </td><td> *7.1 </td></tr>
-				<tr><td> Blink duration</td><td> 0.212s (RT_BENE)</td><td> *0.214s </td><td> 0.190s</td></tr>
-
-				</table>
-			</section>
-		</section> -->
-
-		<section data-auto-animate>
-			<h4>Summary</h4>
-			<table style="font-size: 70%; "><tr><td style="vertical-align: middle;">
-			<ul>
-				<!-- <li class="fragment">Eye-tracking task battery provided a comprehensive evaluation</li> -->
-				<li class="fragment">Deep learning improves eye tracking accuracy for remote, online setups </li>
-				<li class="fragment"> It requires less calibration; longer trials feasible </li>
-				<li class="fragment"> We create and release processing pipelines for 30Hz eye-tracking data </li>
-				<li class="fragment">Limitations: Temporal resolution, real-time application</li>
-				<!-- <li class="fragment">Accuracy of ~2.4° from best performing model</li> -->
-				<!-- <li class="fragment">Better accuracy near the center of screen</li>
-				<li class="fragment">High accuracy in classifying gaze to screen zones/regions</li>
-				<li class="fragment">Can common metrics from lab-based eye-tracking</li> -->
-				<!-- <li class="fragment">Can generate heatmaps and scanpaths similar to lab-based eye-tracking</li> -->
-				<!-- <li class="fragment">Can accurately track gaze movement direction</li> -->
-				<!-- <li class="fragment">FAZE performs best in all tasks but also is the most computationally expensive</li> -->
-				<!-- <li class="fragment">Blink detection with appearance based methods is comparable to high resolution eye trackers</li> -->
-			</ul></td>
-			<td><img src="images/result_sum.png" width=200></td></tr></table>
-		</section>
-		<!-- <section data-auto-animate>
-			<h4>Conclusion</h4>
-			<ul>
-				<li style="font-size: 70%">Deep learning improves eye tracking accuracy for online setups </li>
-				<li style="font-size: 70%"> It increases affordability, scalability and validity of studies </li>
-				<li style="font-size: 70%"> It requires less calibration, longer trials feasible </li>
-				<li style="font-size: 70%"> We create and release processing pipelines for 30Hz eye-tracking data </li>
-				<li style="font-size: 70%">Limitations: Resolution, real-time application</li>
-			</ul>
-			<aside class="notes">Longer trials ex: music videos or movies which hasnt been done yet with webcam, ////, Don't end on limitation.... nonetheless ability to sample globally, cross-culture studies</aside>
-		</section> -->
-	</section>
-	<!-- Optimisation -->
-	<!-- <section>
-		<section data-auto-animate><h4>Optimising the speed-accuracy trade-off</h4></section>
-		<section data-auto-animate><h4>Optimising the speed-accuracy trade-off</h4>
-			<img style="margin-top: 5%;" src="images/WebSight.png" height=300>
-		</section>
-	</section> -->
-
-	
+	</section>	
 
 	<section data-auto-animate><h4>How do we take eye tracking outside the lab?</h4>
 		<div style="display: flex; gap: 40px; align-items: flex-start; font-size: 80%; margin-top: 5%;">
@@ -604,7 +282,7 @@
 				<img src="images/socialEyes/eye-trackers.jpg" height="400" style="margin-left: 15%;"> 
 				
 				<ul style="font-size: 0.7em; list-style: disc; text-align: left; margin: auto 0">
-					<li class="fragment">Properitary firmware/software</li>
+					<li class="fragment">Proprietary firmware/software</li>
 					<li class="fragment">Logistical challenges when managing a fleet</li>
 					<li class="fragment">Synchronising data from multiple sensors and clocks</li>
 					<li class="fragment">Synchronising data from multiple egocentric perspectives</li>
@@ -617,7 +295,7 @@
 			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
 			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
 				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li>Properitary firmware/software</li>
+					<li>Proprietary firmware/software</li>
 					<li>Logistical challenges when managing a fleet</li>
 					<li>Synchronising data from multiple sensors and clocks</li>
 					<li>Synchronising data from multiple egocentric perspectives</li>
@@ -629,7 +307,7 @@
 				</div>
 			</div>
 			<center class="fragment"><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -637,7 +315,7 @@
 			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
 			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
 				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li style="color: green;">Properitary firmware/software</li>
+					<li style="color: green;">Proprietary firmware/software</li>
 					<li>Logistical challenges when managing a fleet</li>
 					<li>Synchronising data from multiple sensors and clocks</li>
 					<li>Synchronising data from multiple egocentric perspectives</li>
@@ -649,7 +327,7 @@
 				</div>
 			</div>
 			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -657,7 +335,7 @@
 			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
 			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
 				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li>Properitary firmware/software</li>
+					<li>Proprietary firmware/software</li>
 					<li style="color: green;">Logistical challenges when managing a fleet</li>
 					<li>Synchronising data from multiple sensors and clocks</li>
 					<li>Synchronising data from multiple egocentric perspectives</li>
@@ -669,7 +347,7 @@
 				</div>
 			</div>
 			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -677,27 +355,7 @@
 			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
 			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
 				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li>Properitary firmware/software</li>
-					<li>Logistical challenges when managing a fleet</li>
-					<li style="color: green;">Synchronising data from multiple sensors and clocks</li>
-					<li>Synchronising data from multiple egocentric perspectives</li>
-					<li>Joint attention visualisation and analysis</li>
-				</ul>
-				<div>
-					<img src="images/socialEyes/logo.png" height="100"> </br> 
-					<img src="images/socialEyes/NTP.png" height="300" style="margin-top: -3%;">  
-				</div>
-			</div>
-			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
-			</p></center>
-		</section>
-
-		<section data-auto-animate>
-			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
-			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
-				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li>Properitary firmware/software</li>
+					<li>Proprietary firmware/software</li>
 					<li>Logistical challenges when managing a fleet</li>
 					<li style="color: green;">Synchronising data from multiple sensors and clocks</li>
 					<li>Synchronising data from multiple egocentric perspectives</li>
@@ -717,7 +375,7 @@
 				</div>
 			</div>
 			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -725,7 +383,7 @@
 			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
 			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
 				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li>Properitary firmware/software</li>
+					<li>Proprietary firmware/software</li>
 					<li>Logistical challenges when managing a fleet</li>
 					<li>Synchronising data from multiple sensors and clocks</li>
 					<li style="color: green;">Synchronising data from multiple egocentric perspectives</li>
@@ -745,7 +403,7 @@
 				</div>
 			</div>
 			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -755,7 +413,7 @@
 			<h4>Study 4: Scaling Mobile Eye-tracking</h4>
 			<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
 				<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
-					<li>Properitary firmware/software</li>
+					<li>Proprietary firmware/software</li>
 					<li>Logistical challenges when managing a fleet</li>
 					<li>Synchronising data from multiple sensors and clocks</li>
 					<li>Synchronising data from multiple egocentric perspectives</li>
@@ -775,7 +433,7 @@
 				</div>
 			</div>
 			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -792,7 +450,7 @@
 				<source src="https://drive.google.com/file/d/1m-E4MsVKIrdTzRFhRr-eKKAyQcGb6BuV/view?usp=sharing" type="video/mp4">
 			</video> -->
 			<center ><p style="font-size: 35%; text-align: left;" >
-				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 751, 1–19. https://doi.org/10.1145/3706598.3713910
+				Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
 			</p></center>
 		</section>
 
@@ -800,18 +458,19 @@
 
 		<section data-auto-animate><h4>Lessons from eye-tracking in co-located, social settings</h4>
 			<ul style="font-size: 60%; margin-top: 15px;">
-				<li class="fragment">The Goldilocks trade-off: non-invasive design vs. experimental control</li>
-				<li class="fragment">Manual annotations and synchronisation doesn't scale</li>
-				<li class="fragment">Mobile eye-trackers are mostly built/tested for single-user, self-operation</li>
-				<li class="fragment">The cost of maintaining a fleet of eye-tracking hardware quickly adds up</li> 
-				<li class="fragment">Properitary softwares and subscriptions make it much worse</li>
-				<li class="fragment">Call to manufacturers, researchers, and developers:</li>
-				<ul style="font-size: 70%; ">
-					<li class="fragment">OpenET: Converging on open standards for hardware-interfacing and data-sharing in eye-tracking</li> 
-					<li class="fragment">https://openet-initiative.github.io/</li>
+				<li class="fragment" data-fragment-index="1">Trade-off between non-invasive design vs. experimental control</li>
+				<li class="fragment" data-fragment-index="2">Manual annotations and synchronisation doesn't scale</li>
+				<li class="fragment" data-fragment-index="3">Mobile eye-trackers are mostly built/tested for single-user, self-operation</li>
+				<li class="fragment" data-fragment-index="4">The cost of maintaining a fleet of eye-tracking hardware quickly adds up</li> 
+				<li class="fragment" data-fragment-index="5">Proprietary softwares and subscriptions make it much worse</li>
+				<li class="fragment" data-fragment-index="6">Call to manufacturers, researchers, and developers:</li>
+				<ul style="font-size: 75%; ">
+					<li class="fragment" data-fragment-index="7">Saxena et al. 2026. OpenET: Converging on open standards for hardware-interfacing and data-sharing in eye-tracking. <br> 
+						28th International Conference on Human-Computer Interaction.</li> 
+					<li class="fragment" data-fragment-index="8"><a href="https://openet-initiative.github.io/">https://openet-initiative.github.io/</a></li>
 				</ul>
 			</ul> <br>
-			<img class="fragment" src="images/socialEyes/openet.png" height="200">
+			<img class="fragment" data-fragment-index="8" src="images/socialEyes/openet.png" height="200">
 		</section>
 
 	</section>
@@ -825,7 +484,7 @@
 				<li class="fragment">Standardization and open-source development is the key</li>
 					<ul><li class="fragment">community-collaboration has solved similar challenges in other spaces</li></ul>
 				<li class="fragment">Wide range of applications: cognitive neuroscience, healthcare, sports, broadcasting, events ...</li>
-					<ul><li class="fragment">I wouldn't have survived without interdisciplinary contributions</li></ul>
+					<ul><li class="fragment">I benefited greatly from interdisciplinary collaboration</li></ul>
 				<li class="fragment">Science advances through both better questions and better methods</li>
 					<ul><li class="fragment">Improving methods could take a full PhD <span class="fragment">and more</span></li></ul>
 				<!-- <ul style="font-size: 60%; ">
@@ -836,19 +495,98 @@
 		</section>
 	</section>
 	
-	<section><h5 class="r-fit-text"></br></br>Thank you for your attention</h5>
+	<section>
+		<img class="fragment" data-fragment-index="8" src="images/socialEyes/openet.png" height="300">
+		<h5 class="r-fit-text">Thank you for your attention</h5>
 			<p  align="left" style="vertical-align:bottom;">
 			<font style="font-size:50%">
-		<img src="images/credits/m24-col.png" height="70">
-		<img src="https://www.aesthetics.mpg.de/fileadmin/templates/img/MPIEA-Logo-Web-EN-4by1.svg" height="80">
-		<img src="images/credits/BL_logo_v5.svg" height="50">
-		<img src="images/credits/LIVELab_nobg.png" height="60"> </br>
-		<img src="images/credits/cfi-master-logo.webp" height="70">
-		<img src="images/credits/1200px-Natural_Sciences_and_Engineering_Research_Council_Logo.webp" height="70"><br>
-		Acknowledgements to all contributors, collaborators, and volunteers.</font></br>
-		</p></section>
+				
+		<img src="images/credits/m24-col.png" height="70" style="margin-bottom: -10px;"> 
+		<img src="https://www.aesthetics.mpg.de/fileadmin/templates/img/MPIEA-Logo-Web-EN-4by1.svg" height="80" style="margin-bottom: -10px;">
+		<img src="images/credits/cfi-master-logo.webp" height="70" style="margin-bottom: -10px;">
+		<img src="images/credits/1200px-Natural_Sciences_and_Engineering_Research_Council_Logo.webp" height="70" style="margin-bottom: -10px;"><br>
+		
+		Acknowledgements to all contributors, collaborators, and volunteers from 
+		<img src="images/credits/BL_logo_v5.svg" height="40" style="margin-bottom: -10px; margin-right: 10px; margin-left: 10px;">
+		<img src="images/credits/LIVELab_nobg.png" height="40" style="margin-bottom: -10px; margin-right: 10px;"></font></br>
+	</p></section>
+
+	<section data-auto-animate data-visibility="uncounted"><h4>Why take eye tracking beyond the lab?</h4> 
+		<ul style="font-size:40%; padding-left: 10%; padding-right: 10%; padding: 3%; list-style: none;">
+			<li>Study social attention in context</li>
+			<li>Study cross-modal dynamics with complex, ecological stimuli</li>
+			<li>Reach global and underrepresented populations</li>
+			<li>Bridge research and deployment–align methods with real-world systems and industry use cases</li>
+			<li>Findings from lab based studies often do not replicate in naturalistic/real-world experimentation</li>
+			<ul style="font-size:60%;">
+				<li>Foulsham et al. (2011). The where, what and when of gaze allocation in the lab and the natural environment. Vision Research, doi: 10.1016/j.visres.2011.07.002.</li>
+				<li>Wohltjen & Wheatley (2024) Interpersonal eye-tracking reveals the dynamics of interacting minds. Front. Hum. Neurosci. doi: 10.3389/fnhum.2024.1356680</li>
+				<li>Laborde et al. (2025) Vision toolkit part 1. Neurophysiological foundations and experimental paradigms in eye-tracking research: a review. Front Physiol. doi: 10.3389/fphys.2025.1571534.</li>
+				<li>Hoppe et al. (2018) Eye Movements During Everyday Behavior Predict Personality Traits. Front. Hum. Neurosci. doi: 10.3389/fnhum.2018.00105</li>
+			</ul>
+		</ul>
+		<aside class="notes">music, crowds, movement, and unpredictability that labs can’t replicate. <br> 
+			enabling participation from individuals who cannot access labs due to physical, cognitive, or economic barriers.<br>
+			align methods with real-world systems and industry use cases
+		</aside>
+	</section>
+
+	<section data-auto-animate data-visibility="uncounted">
+			
+		<table style="font-size: 60%; "><tr><td style="vertical-align: middle;">
+		<h3>Summary of results</h3>
+		<ul>
+			<li class="fragment">Distributed (bookended) and hybrid calibration outperforms sequential calibration</li>
+			<li class="fragment">Gaze prediction accuracy differs across eye-movement and task types</li>
+			<li class="fragment">Deep learning reduces calibration and improves reliability over longer trials</li>
+			<li class="fragment">Fixation accuracy of ~2.4° from best performing model; surpasses previous state-of-the-art</li>
+			<li class="fragment">Prediction accuracy drops at edges and bottom regions of the screen</li>
+			<li class="fragment">Appearance-based methods match high-resolution trackers for blink detection</li>
+			<li class="fragment">Currently running experiments with real-time deep learning model in web-browsers; to be released as a jsPsych extension</li>
+			
+			<!-- <li class="fragment">Better accuracy near the center of screen</li>
+			<li class="fragment">High accuracy in classifying gaze to screen zones/regions</li>
+			<li class="fragment">Can common metrics from lab-based eye-tracking</li> -->
+			<!-- <li class="fragment">Can generate heatmaps and scanpaths similar to lab-based eye-tracking</li> -->
+			<!-- <li class="fragment">Can accurately track gaze movement direction</li> -->
+			<!-- <li class="fragment">FAZE performs best in all tasks but also is the most computationally expensive</li> -->
+			<!-- <li class="fragment">Blink detection with appearance based methods is comparable to high resolution eye trackers</li> -->
+		</ul></td>
+		<td><img src="images/result_sum.png" width=300></td></tr></table>
+	</section>
+
+	<section data-auto-animate data-visibility="uncounted">
+		<h4>Study 4: Scaling Mobile Eye-tracking</h4>
+		<div style="display: grid; grid-template-columns: 0.9fr 1.1fr;">				
+			<ul style="font-size: 0.5em; list-style: disc; text-align: left; margin: auto 0">
+				<li>Proprietary firmware/software</li>
+				<li>Logistical challenges when managing a fleet</li>
+				<li style="color: green;">Synchronising data from multiple sensors and clocks</li>
+				<li>Synchronising data from multiple egocentric perspectives</li>
+				<li>Joint attention visualisation and analysis</li>
+			</ul>
+			<div>
+				<img src="images/socialEyes/logo.png" height="100"> </br> 
+				<img src="images/socialEyes/NTP.png" height="300" style="margin-top: -3%;">  
+			</div>
 		</div>
-		</div>
+		<center ><p style="font-size: 35%; text-align: left;" >
+			Saxena et al. 2025. SocialEyes: Scaling Mobile Eye-tracking to Multi-person Social Settings. <em>ACM SIGCHI 2025</em>. https://doi.org/10.1145/3706598.3713910
+		</p></center>
+	</section>
+
+
+	</div>
+	<!-- <div style="
+			position: fixed;
+			bottom: 20px;
+			left: 30px;
+			font-size: 0.9em;
+			opacity: 0.6;
+			z-index: 1000;">
+		saxens17@mcmaster.ca
+	</div> -->
+	</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
@@ -858,7 +596,7 @@
 
 			Reveal.initialize({
 				hash: true,
-				slideNumber:true, 
+				slideNumber:"h.v",
 				width: 1080,
 				height: 720,
 				maxscale: 2.0,
